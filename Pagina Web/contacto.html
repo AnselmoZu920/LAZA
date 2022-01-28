@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js"crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="logo.png">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo1.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <header class="barra">
+        <nav class="nav">
+            <a href="Principal.html" class="logo2">
+              <div>
+                <p class="logo2-text"> Cinema Mex</p>
+              </div>
+            </a>
+        </nav>
+      </header>
+      <br>
+      <h1>Contactate con Nosotros</h1>
+      <div  class="formulario">
+        <form method="post">
+          <input type="text" name="name" placeholder="Nombre" class="formulario-input">
+          <input type="email" name="mail" placeholder="name@example.com" class="formulario-input">
+          <input type="number" name="number" placeholder="Telefono" class="formulario-input">
+          <textarea name="msj" placeholder="Mensaje" class="formulario-input"></textarea>
+          <input type="submit" class="formulario-boton">
+        </form>
+      </div>
+      <?php
+      include("formulario.php")
+      ?>
+      <div class="formulario" id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6672.341910604727!2d-99.18773634091708!3d19.532060702700743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f7fc549aaaab%3A0x961cb1dafd5d1266!2sTecNM%20-%20Campus%20Tlalnepantla!5e0!3m2!1ses-419!2smx!4v1643132308691!5m2!1ses-419!2smx" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <footer class="barra-baja">
+        <h3 class="b-b-h5">S.A. de C.V
+          Zuñiga Armas Luis Anselmo</h3>
+          <div class="barra-baja-redes">
+            <h5 class="barra-baja-redes-texto">Siguenos En Nuestras Redes Sociales</h5>
+            <i class="fa fa-facebook redes-iconos"></i> 
+            <i class="fa fa-twitter redes-iconos"></i>
+            <i class="fa fa-instagram redes-iconos"></i>
+            <i class="fa fa-snapchat-ghost redes-iconos"></i>
+          </div> 
+          <div class="barra-baja-links">
+            <a href="contacto.html">Contacto</a>
+          </div>
+      </footer>
+</body>
+</html>

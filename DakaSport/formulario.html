@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario</title>
+	<script>
+function usrpas(){
+if (document.form1.txt.value=="AnselmoZuniga" && document.form1.pass.value=="123456789"){window.location="Daka.html"}
+else {alert("Error en Usuario o Contrasena. Intenta de nuevo.")}
+}
+document.oncontextmenu=new Function("return false");
+</script>
+<style type="text/css">
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open sans';
+}
+
+body{
+    background-color: #000000;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 15px;
+}
+.form{
+    width: 400px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+    background: #000000;
+    border-radius: 4px;
+}
+h1{
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    position: relative;
+
+}
+.cajas{
+	position: relative;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    border: 3px solid #80FF00;
+    border-left: 10px solid #0000;
+    transition: all .2s ease;
+}
+.cajas:hover, .cajas:focus{
+    border-left: 10px solid #80FF00;
+}
+.enviar{
+    width: 55px;
+    padding: 10px;
+    color: #1e2e0e;
+    background-color: #000000;
+    border: 1px solid #FFFFFF;
+  }
+.cancelar{
+width: 65px;
+    padding: 10px;
+    color: #80FF00;
+    background-color: #000000;
+    border: 1px solid #FFFFFF;
+    float: right;
+}
+
+	</style>
+</head>
+<body>
+<form name="form1" class="form">
+	<h1>Ingrese los Datos</h1>
+<input class="cajas" type="text" name="txt" placeholder="AnselmoZuniga" required><br>
+<input class="cajas" type="password" name="pass" placeholder="123456789" required><br>
+<input class="enviar" type="button" value="Enviar" onclick="usrpas()">
+<input class="cancelar" type="button" value="Cancelar" onclick="close(formulario.html)">
+</form>
+</body>
+</html>

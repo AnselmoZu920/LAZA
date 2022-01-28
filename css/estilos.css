@@ -1,0 +1,582 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Condensed','Century Gothic';
+}
+body{
+  background: azure;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+/*LOGO*/
+.logo{
+  display: flex;
+  text-decoration: none;
+  text-align: center;
+  color: skyblue;
+  margin-top: 18px;
+  width: 250px;
+}
+.logo-text{
+  font-family:'Barlow Condensed', sans-serif;
+  font-size: 25px;
+}
+/*BANNER*/
+.banner{
+    margin-top: 70px;
+    background: linear-gradient(rgba(176, 247, 252, 0.75),
+    rgba(255, 255, 255, 0.75)),url(../img/Banner.png) no-repeat center center fixed;
+    background-size: cover;
+    height: 710px;
+    position:static;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner_info{
+    padding: 0.3em;
+    position:static;
+    width: 100%;
+    max-width:600px;
+    text-align: center;
+    color: black;
+    margin: auto;
+}
+/*BARRA NAVEGACIÓN*/
+.header {
+    background-color: #000000;
+    height: 70px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+  }
+  .nav-link {
+    color: azure;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 3px;
+  }
+  .nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+  }
+  .nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+    position: relative;
+  }
+  .nav-menu-item a::after{
+    content: "";
+    background-color: skyblue;
+    position: absolute;
+    left: 0;
+    top:65%;
+    width: 100%;
+    height: 3px;
+    opacity: 0;
+    transition: opacity 0.6s;
+  }
+  .nav-menu-item a.selected::after,
+  .nav-menu-item a:hover::after{
+    opacity: 0.8;
+  }
+  .nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 35px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+  }
+  /*CUERPO*/
+        /* SECCIONES*/
+  .about{
+    background: azure;
+    height: 600px;
+  }
+  .portafolio{
+    background: azure;
+    height: 600px;
+  }
+  .contacto{
+    background: azure;
+    height: 500px;
+  }
+  .cursos{
+    background: azure;
+    height: 1000px;
+  }
+        /*TEXTO*/
+  .banner_titulo{
+    color: black;
+    font-family: 'Barlow Condensed', 'Century Gothic';
+    font-size: 50px;
+  }
+  .banner_p{
+    color:darkslategrey;
+    font-size: 30px;
+  }
+  .titulos{
+    padding: 50px;
+    color:teal;
+    font-size: 30px;
+  }
+  .texto{
+    margin-top: 10px;
+    margin-left: 60px;
+    font-size: 20px;
+  }
+  .semi-titulo{
+    color:skyblue;
+    margin-left: 60px;
+    font-size: 30px;
+  }
+  .semi-titulo-2{
+    margin-left: 65px;
+    color:darkslategrey;
+    font-size: 30px;
+  }
+  .texto-2{
+    margin-left: 65px;
+    font-size: 30px;
+  }
+  .boton{
+    margin: auto;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 70px;
+    border: none;
+    border-radius: 6px;
+    background: darkcyan;
+    color: azure;
+    width: 135px;
+    box-shadow: 1px 1px 1px 1px black;
+    height: 40px;
+    cursor: pointer;
+  }
+  .boton:hover{
+    transition: .2s all;
+    width: 140px;
+    height: 45px;
+  }
+  .cv{
+    text-decoration: none;
+    color: azure;
+    font-family: 'Barlow Condensed','Century Gothic';
+  }
+  .uno, .dos, .tres, .cuatro, .cinco, .seis{
+    margin-top: 30px;
+    margin-left: 60px;
+    color: lightskyblue;
+    width: 90px;
+  }
+  .uno:hover, .dos:hover, .tres:hover, .cuatro:hover, .cinco:hover, .seis:hover{
+    transform:rotate3d();
+    transition: 1s all;
+    width: 95px;
+    color:darkslategrey;
+  }
+  .ocho, .nueve, .diez, .once{
+    margin-top: 50px;
+    margin-left: 60px;
+    text-align: center;
+    font-size: 40px;
+    color: azure;
+  }
+  .ocho:hover{
+    color: skyblue;
+    font-size: 42px;
+    transition: .6s all;
+  }
+  .diez:hover{
+    color: red;
+    font-size: 42px;
+    transition: .6s all;
+  }
+  .once:hover{
+    background: -webkit-linear-gradient(120deg, #ff00f7, #00d0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 42px;
+    transition: .6s all;
+  }
+  .nueve:hover{
+    color:grey;
+    font-size: 42px;
+    transition: .6s all;
+  }
+  /*CONTENEDOR */
+  .contenedor{
+    width: 500px;
+    left: 30%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    display: inline-block;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0 70px 63px -60px black;
+  }
+  .img-contenedor{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .contenido{
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  .capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: rgb(255, 255, 255, 0.75);
+  }
+  .contenedor:hover .capa{
+    opacity: .4;
+  }
+  .contenedor:hover{
+    width: 520px;
+    transition: 1s ease-in-out;
+  }
+  .boton-contenedor{
+    border: none;
+    border-radius: 3px ;
+    background: black;
+    margin-left: 20px;
+    width: 110px;
+  }
+  .text-contenedor{
+    font-family: 'Barlow Condensed','Century Gothic';
+    font-size: 20px;
+    text-decoration: none;
+    color:azure;
+  }
+  /* BOTON IR ARRIBA */
+  #boton-fijo{
+    width: 50px;
+    height: 50px;
+    background: black;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 30px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 300ms ease;
+    transform: scale(0);
+  }
+  #boton-fijo:hover{
+    transform: scale(2);
+    border-color: black;
+    box-shadow: 1px 5px -15px black;
+  }
+  /*GALERIA CURSOS*/
+  .galeria{
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(3, 3fr);
+    margin-left: 40px;
+    margin-top: 50px;
+  }
+  .galeria-img{
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+  }
+  .galeria-img img{
+    width: 100%;
+  }
+  .galeria-img:hover{
+    transition: .8s all;
+    width: 103%;
+  }
+  /*CONTACTO*/
+  .contact{
+    background: black;
+    margin-top: 150px;
+    min-height: 300px;
+    width: 100%;
+  }
+  .contact-titulo{
+    font-size: 40px;
+    color: skyblue;
+    margin-left: 50px;
+  }
+  .contact-texto{
+    color: azure;
+    font-size: 30px;
+    margin-left: 60px;
+  }
+  .contact-info{
+    display: inline-block;
+    margin: 10px;
+  }
+  .contact-redes{
+    margin-top: 20px;
+    display: inline-block;
+    margin: 10px;
+  }
+
+        /*DISPOSITIVOS MOVILES*/
+  @media screen and (max-width: 1280px){
+    /*cONTENEDOR*/
+    .contenedor{
+      width: 450px;
+      text-align: center;
+      align-items: center;
+    }
+    .contenedor:hover{
+      width: 470px;
+      transition: 1s ease-in-out;
+    }
+    /*GALERIA*/
+    .galeria{
+      grid-template-columns: repeat(2, 1fr);
+      width: 90%;
+    }
+    .galeria-img{
+      width: 75%;
+    }
+    .galeria-img:hover{
+      width: 78%;
+      transition: .8s all;
+    }
+    /*SECCIONES*/
+    .cursos{
+      height: 1300px;
+    }
+     /*CONTACTO*/
+    .contact{
+    height: 350px;
+    }
+    .contact-texto{
+    font-size: 25px;
+    }
+    .contact-titulo{
+    font-size: 35px;
+    }
+    .contact-info{
+      display: block;
+      text-align: center;
+      align-items: center;
+    }
+    .contact-redes{
+      display: block;
+      text-align: center;
+      align-items: center;
+    }
+    .ocho, .nueve, .diez, .once{
+      font-size: 35px;
+    }
+    .ocho:hover, .nueve:hover, .diez:hover, .once:hover{
+      font-size: 38px;
+      transition: .6s all;
+    }
+  }
+  @media screen and (max-width: 1040px){
+    /*CONTENEDOR*/
+    .contenedor{
+      width: 390px;
+      display: inline-block;
+    }
+    .contenedor:hover{
+      width: 410px;
+      transition: 1s ease-in-out;
+    }
+    /*GALERIA*/
+    .galeria{
+      grid-template-columns: repeat(2, 1fr);
+      width: 90%;
+    }
+    .galeria-img{
+      width: 75%;
+    }
+    .galeria-img:hover{
+      width: 78%;
+      transition: .8s all;
+    }
+  }
+  @media screen and (max-width: 970px){
+    /*CONTENEDOR*/
+    .contenedor{
+      width: 390px;
+      left: 48%;
+      margin: 20px;
+      top: 20%;
+      display: block;
+    }
+    .contenedor:hover{
+      width: 410px;
+      transition: 1s ease-in-out;
+    }
+    /*GALERIA*/
+    .galeria{
+      grid-template-columns: repeat(2, 1fr);
+      width: 90%;
+    }
+    .galeria-img{
+      width: 75%;
+    }
+    .galeria-img:hover{
+      width: 78%;
+      transition: .8s all;
+    }
+    /*SECCIONES*/
+    .cursos{
+      height: 175%;
+    }
+    .portafolio{
+      height: 800px;
+    }
+  }
+  @media screen and (max-width: 767px){
+    /*HEADER*/
+    .header {
+      height: 70px;
+    }
+    /*BARRA NAVEGACIÓN*/
+    .nav-menu {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      background-color: #000000;
+      position: fixed;
+      top: 60px;
+      width: 100%;
+      padding: 20px 0;
+      height: calc(100% - 60px);
+      overflow-y: auto;
+      left: 100%;
+      transition: left 0.3s;
+    }
+    .nav-menu-item {
+      line-height: 70px;
+    }
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+      background: none;
+      color: azure;
+    }
+    .nav-toggle {
+      display: block;
+    }
+    .nav-menu_visible {
+      left: 0;
+    }
+    .nav-toggle:focus:not(:focus-visible) {
+      outline: none;
+    }
+    .nav-menu-item a::after{
+      content: none;
+    }
+    .nav-menu-item a:hover,
+    .nav-menu-item a.selected{
+      color: skyblue;
+    }
+    /* ICONOS Y TEXTO*/
+    .ocho, .nueve, .diez, .once{
+      margin-top: 20px;
+      margin-left: 25px;
+      text-align: center;
+      font-size: 26px;
+    }
+    .titulos{
+      padding: 20px;
+      font-size: 20px;
+    }
+    .texto{
+      font-size: 15px;
+      margin-top: 10px;
+      margin-left: 35px;
+    }
+    .semi-titulo{
+      color:skyblue;
+      margin-left: 20px;
+      font-size: 17px;
+    }
+    .texto-2{
+      font-size: 20px;
+      font-family: 'Barlow Condensed','Century Gothic';
+    }
+    .ocho:hover, .nueve:hover, .diez:hover, .once:hover{
+      font-size: 28px;
+    }
+    /*cONTENEDOR*/
+    .contenedor{
+      left: 48%;
+      width: 350px;
+      margin: 20px;
+      top: 20%;
+      display: block;
+    }
+    .contenedor:hover{
+      width: 365px;
+      transition: 1s all;
+    }
+    .text-contenedor{
+      font-size: 17px;
+    }
+    /*LOGO*/
+    .logo{
+      margin-left: 20px;
+    }
+    /*GALERIA*/
+    .galeria{
+      grid-template-columns: repeat(1, 2fr);
+      width: 90%;
+    }
+    .galeria-img{
+      width: 80%;
+    }
+    .galeria-img:hover{
+      width: 83%;
+      transition: .8s all;
+    }
+    /*SECCIONES*/
+    .cursos{
+      height: 200%;
+    }
+    .contacto{
+      height: 400px;
+    }
+    .portafolio{
+      height: 750px;
+    }
+  }
+  @media screen and (max-width: 700px){
+  }
+  
+  @media screen and (max-width: 400px) {
+    
+ }

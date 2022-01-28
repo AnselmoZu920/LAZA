@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Prueba</title>
+	<script language="Javascript"> 
+function redireccion() {
+    window.location = "formulario.html";
+}
+var temp = setTimeout(redireccion, 1000);
+document.addEventListener("click", function() {
+    clearTimeout(temp);
+    temp = setTimeout(redireccion, 1000);
+})
+</script>
+<style type="text/css">
+img{
+	 max-width: 100%;
+	 height: auto;
+}
+</style>
+</head>
+<body bgcolor="black">
+	<center>
+<img src="video1.gif"width="640" height="480">
+ <br>
+<img src="img.gif"width="320" height="240">
+</center>
+</body>
+</html>

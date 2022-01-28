@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+	<title>Localizacion</title>
+<style>
+h2 { color: limegreen;}
+h3{ color: white;}
+b{color: green;}
+</style>
+<style type="text/css">
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  padding: 90px 20px 0;
+}
+.header {
+  background-color: #000000;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 992px;
+  margin: 0 auto;
+}
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 40px;
+  line-height: 80px;
+}
+.nav-menu {
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+.nav-menu-item {
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content;
+}
+
+.nav-menu-link {
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+  background-color: #80FF00;
+  transition: 0.5s;
+}
+.nav-toggle {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+  display: none;
+}
+.contrainer-bar{
+  width: 100%;
+  max-width: 55px;
+  position: fixed;
+  left: 0;
+  top: 25%;
+}
+.contrainer-bar a{
+  display: block;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+  position: relative;
+  transition: all 500ms ease;
+}
+.fa-facebook{
+  color: #FFFFFF;
+}
+.fa-instagram{
+  color: #FFFFFF;
+}
+.contrainer-bar .fa-facebook:hover{
+background: #3b5998;
+width: 230%;
+}
+.contrainer-bar .fa-instagram:hover{
+background: #FF00FF;
+width: 300%;
+}
+.letra{
+  color: #FFFFFF;
+}
+.fa-play{
+  color: #FFFFFF;
+}
+.fa-play:hover{
+  color: #80FF00;
+}
+.icon-social{
+  transition: all 0.4s;
+  transform: translateX(0%);
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+}
+#btn-social:checked ~.icon-social{
+  transform: translateX(-200%);
+}
+#btn-social:checked ~.fa-play{
+  transform: rotate(0deg);
+}
+#btn-social{
+  display: none;
+}
+.contrainer-bar #title{
+  position: fixed;
+  padding: 6px;
+  margin-top:-6px; 
+}
+.img{
+  width: 270px;
+  height: 270px;
+}
+	</style>
+	</head>
+	<body bgcolor="black"> 
+    <div class="contrainer-bar">
+      <input type="checkbox" id="btn-social">
+      <label for="btn-social" class="fa fa-play"></label>
+      <div class="icon-social">
+        <a href="https://www.facebook.com/anselmo.zuniga.1" class="fa fa-facebook"><span id="title" class="letra">  Facebook</span></a>
+        <a href="https://www.instagram.com/anselmo_zu/"class="fa fa-instagram"><span id="title" class="letra">  Instagram</span></a>
+      </div>
+    </div>
+
+		<header class="header">
+      <nav class="nav">
+        <img src="video1.jpg"style="width:100px;height:100px;">
+          <li class="nav-menu-item">
+            <a href="Daka.html" class="nav-menu-link nav-link nav-menu-link_active">Inicio</a>
+          </li>
+        </ul>
+      </nav>
+    </header> <br>
+    <center>
+    <h2> Estamos hubicados en este sitio, para cuando quieran venir a visitarnos, <br>
+esta es nuestra tienda departamental, aqui seran bien recibidos cuando quieran. <br>
+Los esperamos con mucho gusto, y ¡¡ Muchas gracias por su preferencia!! 
+<br> <br>
+<iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Av.%20Instituto%20Tecnol%C3%B3gico%20s/n,%20La%20Comunidad%20Tlalnepantla+(ITTLA)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <br>
+<h2>Aqui abajo aparecen 2 codigos QR, los cuales uno es para mi facebook<br> y el otro es para instagram. Al igual que la barra <br>que se puede ocultar del lado izquierdo.  </h2>
+<img class="img" src="qrcode_www.facebook.com.png">
+<img class="img" src="qrcode_www.instagram.com.png"></center>
+</body>
+</html>
